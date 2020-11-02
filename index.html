@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cataloge KLPT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+      <div class="d-flex flex-row-reverse page-header__top">
+        <a class="p-2" href="#">Login</a>
+        <span class="p-2">|</span>
+        <a class="p-2" href="#">Register</a>
+      </div>
+      <h1 class="offset-md-4 col-4 text-center">
+        <a href=""><img src="assets/images/logo.png" alt="THACO" class="logo"></a>
+      </h1>
+    </header>
+    <!-- / PAGE HEADER -->
+
+    <!-- SEARCH BAR -->
+    <div class="search mt-2">
+      <div class="row flex-nowrap justify-content-between align-items-center">
+        <div class="col-2 d-none d-md-block">
+          <h3 class="search__title my-0 text-right">Cataloge CNHT</h3>
+        </div>
+        <div class="col-sm search__wrapper-input">
+          <div class="input-group">
+            <input type="text" class="form-control form-control--no-border search__input"
+              placeholder="Search keywords...">
+            <div class="input-group-append">
+              <button class="btn btn--no-border btn-primary" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 px-0">
+          <div class="search__cart">
+            <i class="fas fa-cart-plus"></i>
+            <span>10</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / SEARCH BAR -->
+
+  </div>
+  <!-- / .container -->
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner mt-4">
+    <img src="http://trials.freedemo.website/andronesi_com/app/web/upload/medium/slideshow-image1-174-1545907866.jpg"
+      class="img-fluid" alt="Responsive image">
+  </div>
+  <!-- / PAGE BANNER -->
+
+  <!-- FILTERS GROUP -->
+  <div class="group-filters py-5">
+    <div class="container">
+      <form class="justify-content-between align-items-center">
+        <h1 class="group-filters__title">Tìm kiếm sản phẩm nâng cao</h1>
+
+        <div class="form-row">
+          <div class="col">
+            <select class="form-control">
+              <option selected>Nhà máy</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col">
+            <select class="form-control">
+              <option selected>Sản phẩm</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col">
+            <select class="form-control">
+              <option selected>Dòng xe</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col">
+            <select class="form-control">
+              <option selected>Chủng loại</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col">
+            <button type="submit" class="btn btn-success">Tìm kiếm</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- / FILTERS GROUP -->
+
+  <!-- RESULTS FILTER -->
+  <main class="page-content">
+    <div class="container">
+      <h2 class="c-heading">Danh sách sản phẩm</h2>
+
+      <div class="js-popover-technical popover-technical"></div>
+
+      <div class="table-responsive-md">
+        <table class="table table-bordered table-results">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">#</th>
+              <th scope="col" class="text-center">
+                <input type="checkbox">
+              </th>
+              <th scope="col">Mã SP</th>
+              <th scope="col">Nhà máy</th>
+              <th scope="col">Tên SP</th>
+              <th scope="col">Dòng xe</th>
+              <th scope="col">Chủng loại</th>
+              <th scope="col">Thông số KT</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">1</td>
+              <td class="text-center"><input type="checkbox"></td>
+              <td>012305323</td>
+              <td>Composite</td>
+              <td>Vỏ giàn lạnh xe DWS-300 (Mobihome)</td>
+              <td>WS-300 (Mobihome)</td>
+              <td>Phụ kiện ô tô</td>
+              <td class="text-center detail-technical">
+                <i class="fas fa-clipboard-list fa-lg" data-toggle="popover-technical"></i>
+                <div class="js-popover-content">
+                  <table class="table table-bordered table-detail-technical">
+                    <thead>
+                      <tr>
+                        <th scope="col">Thông số kỹ thuật</th>
+                        <th scope="col">Chi tiết</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Vật liệu</td>
+                        <td>Composite</td>
+                      </tr>
+                      <tr>
+                        <td>Công nghệ</td>
+                        <td>Han lay up</td>
+                      </tr>
+                      <tr>
+                        <td>Khối lượng</td>
+                        <td>70 kg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">2</td>
+              <td class="text-center"><input type="checkbox"></td>
+              <td>012305323</td>
+              <td>Composite</td>
+              <td>Vỏ giàn lạnh xe DWS-300 (Mobihome)</td>
+              <td>WS-300 (Mobihome)</td>
+              <td>Phụ kiện ô tô</td>
+              <td class="text-center detail-technical">
+                <i class="fas fa-clipboard-list fa-lg" data-toggle="popover-technical"></i>
+                <div class="js-popover-content">
+                  <table class="table table-bordered table-detail-technical">
+                    <thead>
+                      <tr>
+                        <th scope="col">Thông số kỹ thuật</th>
+                        <th scope="col">Chi tiết</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Vật liệu</td>
+                        <td>Composite</td>
+                      </tr>
+                      <tr>
+                        <td>Công nghệ</td>
+                        <td>Han lay up</td>
+                      </tr>
+                      <tr>
+                        <td>Khối lượng</td>
+                        <td>70 kg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">3</td>
+              <td class="text-center"><input type="checkbox"></td>
+              <td>012305323</td>
+              <td>Composite</td>
+              <td>Vỏ giàn lạnh xe DWS-300 (Mobihome)</td>
+              <td>WS-300 (Mobihome)</td>
+              <td>Phụ kiện ô tô</td>
+              <td class="text-center detail-technical">
+                <i class="fas fa-clipboard-list fa-lg" data-toggle="popover-technical"></i>
+                <div class="js-popover-content">
+                  <table class="table table-bordered table-detail-technical">
+                    <thead>
+                      <tr>
+                        <th scope="col">Thông số kỹ thuật</th>
+                        <th scope="col">Chi tiết</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Vật liệu</td>
+                        <td>Composite</td>
+                      </tr>
+                      <tr>
+                        <td>Công nghệ</td>
+                        <td>Han lay up</td>
+                      </tr>
+                      <tr>
+                        <td>Khối lượng</td>
+                        <td>70 kg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">4</td>
+              <td class="text-center"><input type="checkbox"></td>
+              <td>012305323</td>
+              <td>Composite</td>
+              <td>Vỏ giàn lạnh xe DWS-300 (Mobihome)</td>
+              <td>WS-300 (Mobihome)</td>
+              <td>Phụ kiện ô tô</td>
+              <td class="text-center detail-technical">
+                <i class="fas fa-clipboard-list fa-lg" data-toggle="popover-technical"></i>
+                <div class="js-popover-content">
+                  <table class="table table-bordered table-detail-technical">
+                    <thead>
+                      <tr>
+                        <th scope="col">Thông số kỹ thuật</th>
+                        <th scope="col">Chi tiết</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Vật liệu</td>
+                        <td>Composite</td>
+                      </tr>
+                      <tr>
+                        <td>Công nghệ</td>
+                        <td>Han lay up</td>
+                      </tr>
+                      <tr>
+                        <td>Khối lượng</td>
+                        <td>70 kg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </main>
+  <!-- / RESULTS FILTER -->
+
+  <footer class="page-footer">
+    <p>Phát triển bởi Công ty TNHH TeraTech</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/dcd8ac9b46.js" crossorigin="anonymous"></script>
+  <script src="assets/index.js"></script>
+</body>
+
+</html>

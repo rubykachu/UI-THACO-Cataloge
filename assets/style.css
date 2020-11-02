@@ -1,0 +1,147 @@
+:root {
+  --color-primary: #2d88cf;
+}
+
+body {
+  background: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.c-heading {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-control--no-border {
+  border-radius: unset;
+}
+
+.btn--no-border {
+  border-radius: unset;
+}
+.btn--no-border:focus {
+  box-shadow: unset;
+}
+/* ======= PAGE HEADER ======= */
+.page-header {
+}
+
+.page-header__top{
+  line-height: 0;
+  padding-top: 10px;
+}
+
+.page-header__top a {
+  color: inherit;
+}
+
+.page-header .logo{
+  width: 300px;
+}
+
+/* ======= SEARCH BAR ======= */
+.search__input:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.search__title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.search__cart {
+  position: relative;
+  text-align: center;
+}
+
+.search__cart .fas {
+  font-size: 25px
+}
+
+.search__cart span {
+  position: absolute;
+  display: block;
+  top: -15px;
+  left: 55px;
+  width: 23px;
+  height: 23px;
+  line-height: 23px;
+
+  background-color: red;
+  color: #fff;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+/* ======= PAGE BANNER ======= */
+.page-banner .img-fluid {
+  width: 100%;
+}
+
+/* ======= FILTERS GROUP ======= */
+.group-filters {
+  background-color: var(--color-primary);
+  margin-bottom: 45px;
+}
+
+.group-filters__title {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+/* ======= TABLE RESULTS ======= */
+.table-results .detail-technical table {
+  display: none;
+}
+
+.table-results .detail-technical .fas {
+  cursor: pointer;
+}
+
+.popover-technical .popover {
+  border: unset;
+}
+
+.popover-technical .popover-body {
+  padding: unset;
+}
+
+.popover-technical table {
+  margin-bottom: unset
+}
+
+/* ======= PAGE FOOTER ======= */
+
+.page-footer {
+  padding: 1rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+
+/* ======= MEDIA RESPONSE ======= */
+
+@media only screen and (max-width: 500px) {
+  .search__cart {
+    margin-left: -15px;
+    text-align: left;
+  }
+  .search__cart span {
+    left: 21px;
+  }
+  .search__wrapper-input {
+    margin-right: 15px;
+  }
+}
