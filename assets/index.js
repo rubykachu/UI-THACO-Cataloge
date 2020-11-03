@@ -1,4 +1,10 @@
 $(function () {
+  // ====== TOGGLE CHECK ALL ======
+  $(".js-select-all").click(function () {
+    let $checkbox = $(this).closest("table").find("td:nth-child(2) input:checkbox")
+    $checkbox.prop('checked', $(this).prop('checked'));
+  });
+
   // ====== TOGGLE POPOVER TECHNICAL ======
   const $popoverTech = $('[data-toggle="popover-technical"]');
 

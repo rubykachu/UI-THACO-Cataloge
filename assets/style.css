@@ -9,6 +9,19 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.w-100p {
+  width: 100%;
+}
+
+.divider {
+  border-top: 1px solid #eee;
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  background-color: var(--color-primary)
+}
+
 .c-heading {
   font-size: 28px;
   text-transform: uppercase;
@@ -24,9 +37,11 @@ body {
 .btn--no-border {
   border-radius: unset;
 }
+
 .btn--no-border:focus {
   box-shadow: unset;
 }
+
 /* ======= PAGE HEADER ======= */
 .page-header {
 }
@@ -115,6 +130,7 @@ body {
 
 .popover-technical .popover {
   border: unset;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .popover-technical .popover-body {
