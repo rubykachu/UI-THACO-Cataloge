@@ -19,9 +19,9 @@
     <!-- PAGE HEADER -->
     <header class="page-header">
       <div class="d-flex flex-row-reverse page-header__top">
-        <a class="p-2" href="./signin.html">Login</a>
+        <a class="p-2" href="#">Đăng xuất</a>
         <span class="p-2">|</span>
-        <a class="p-2" href="./signup.html">Register</a>
+        <a class="p-2" href="#">Xin chào Guest</a>
       </div>
       <h1 class="offset-md-4 col-4 text-center">
         <a href="./index.html"><img src="assets/images/logo.png" alt="THACO" class="logo"></a>
@@ -48,10 +48,8 @@
         </div>
         <div class="col-1 px-0">
           <div class="search__cart">
-            <a href="./history.html">
-              <i class="fas fa-cart-plus"></i>
-              <span>10</span>
-            </a>
+            <i class="fas fa-cart-plus"></i>
+            <span>10</span>
           </div>
         </div>
       </div>
@@ -61,63 +59,243 @@
   </div>
   <!-- / .container -->
 
-  <!-- PAGE BANNER -->
-  <div class="page-banner mt-4">
-    <img src="http://trials.freedemo.website/andronesi_com/app/web/upload/medium/slideshow-image1-174-1545907866.jpg"
-      class="img-fluid" alt="Responsive image">
-  </div>
-  <!-- / PAGE BANNER -->
-
-  <!-- FILTERS GROUP -->
-  <div class="group-filters py-5">
-    <div class="container">
-      <form class="justify-content-between align-items-center">
-        <h1 class="group-filters__title">Tìm kiếm sản phẩm nâng cao</h1>
-
-        <div class="form-row">
-          <div class="col">
-            <select class="form-control">
-              <option selected>Nhà máy</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="col">
-            <select class="form-control">
-              <option selected>Sản phẩm</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="col">
-            <select class="form-control">
-              <option selected>Dòng xe</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="col">
-            <select class="form-control">
-              <option selected>Chủng loại</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="col">
-            <button type="submit" class="btn btn-success">
-              <i class="fas fa-filter"></i>
-
-              Lọc kết quả
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-  </div>
-  <!-- / FILTERS GROUP -->
-
   <!-- RESULTS FILTER -->
   <main class="page-content">
-    <div class="container">
-      <h2 class="c-heading">Danh sách sản phẩm</h2>
-
+    <div class="container pt-5">
       <div class="table-responsive-md">
+        <table class="table table-bordered table-results">
+          <thead>
+            <tr>
+              <th scope="col" class="text-center">#</th>
+              <th scope="col" class="text-center">
+                <input type="checkbox">
+              </th>
+              <th scope="col">Mã SP</th>
+              <th scope="col">Nhà máy</th>
+              <th scope="col">Tên SP</th>
+              <th scope="col">Dòng xe</th>
+              <th scope="col">Chủng loại</th>
+              <th scope="col">Thông số KT</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">1</td>
+              <td class="text-center"><input type="checkbox"></td>
+              <td>012305323</td>
+              <td>Composite</td>
+              <td>Vỏ giàn lạnh xe DWS-300 (Mobihome)</td>
+              <td>WS-300 (Mobihome)</td>
+              <td>Phụ kiện ô tô</td>
+              <td class="text-center detail-technical">
+                <i class="fas fa-clipboard-list fa-lg" data-toggle="popover-technical"></i>
+                <div class="js-popover-content">
+                  <table class="table table-bordered table-detail-technical">
+                    <thead>
+                      <tr>
+                        <th scope="col">Thông số kỹ thuật</th>
+                        <th scope="col">Chi tiết</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Vật liệu</td>
+                        <td>Composite</td>
+                      </tr>
+                      <tr>
+                        <td>Công nghệ</td>
+                        <td>Han lay up</td>
+                      </tr>
+                      <tr>
+                        <td>Khối lượng</td>
+                        <td>70 kg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+              <td>
+                <a href="" class="text-danger"><i class="far fa-trash-alt fa-lg"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">2</td>
+              <td class="text-center"><input type="checkbox"></td>
+              <td>012305323</td>
+              <td>Composite</td>
+              <td>Vỏ giàn lạnh xe DWS-300 (Mobihome)</td>
+              <td>WS-300 (Mobihome)</td>
+              <td>Phụ kiện ô tô</td>
+              <td class="text-center detail-technical">
+                <i class="fas fa-clipboard-list fa-lg" data-toggle="popover-technical"></i>
+                <div class="js-popover-content">
+                  <table class="table table-bordered table-detail-technical">
+                    <thead>
+                      <tr>
+                        <th scope="col">Thông số kỹ thuật</th>
+                        <th scope="col">Chi tiết</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Vật liệu</td>
+                        <td>Composite</td>
+                      </tr>
+                      <tr>
+                        <td>Công nghệ</td>
+                        <td>Han lay up</td>
+                      </tr>
+                      <tr>
+                        <td>Khối lượng</td>
+                        <td>70 kg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+              <td>
+                <a href="" class="text-danger"><i class="far fa-trash-alt fa-lg"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">3</td>
+              <td class="text-center"><input type="checkbox"></td>
+              <td>012305323</td>
+              <td>Composite</td>
+              <td>Vỏ giàn lạnh xe DWS-300 (Mobihome)</td>
+              <td>WS-300 (Mobihome)</td>
+              <td>Phụ kiện ô tô</td>
+              <td class="text-center detail-technical">
+                <i class="fas fa-clipboard-list fa-lg" data-toggle="popover-technical"></i>
+                <div class="js-popover-content">
+                  <table class="table table-bordered table-detail-technical">
+                    <thead>
+                      <tr>
+                        <th scope="col">Thông số kỹ thuật</th>
+                        <th scope="col">Chi tiết</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Vật liệu</td>
+                        <td>Composite</td>
+                      </tr>
+                      <tr>
+                        <td>Công nghệ</td>
+                        <td>Han lay up</td>
+                      </tr>
+                      <tr>
+                        <td>Khối lượng</td>
+                        <td>70 kg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+              <td>
+                <a href="" class="text-danger"><i class="far fa-trash-alt fa-lg"></i></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">4</td>
+              <td class="text-center"><input type="checkbox"></td>
+              <td>012305323</td>
+              <td>Composite</td>
+              <td>Vỏ giàn lạnh xe DWS-300 (Mobihome)</td>
+              <td>WS-300 (Mobihome)</td>
+              <td>Phụ kiện ô tô</td>
+              <td class="text-center detail-technical">
+                <i class="fas fa-clipboard-list fa-lg" data-toggle="popover-technical"></i>
+                <div class="js-popover-content">
+                  <table class="table table-bordered table-detail-technical">
+                    <thead>
+                      <tr>
+                        <th scope="col">Thông số kỹ thuật</th>
+                        <th scope="col">Chi tiết</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Vật liệu</td>
+                        <td>Composite</td>
+                      </tr>
+                      <tr>
+                        <td>Công nghệ</td>
+                        <td>Han lay up</td>
+                      </tr>
+                      <tr>
+                        <td>Khối lượng</td>
+                        <td>70 kg</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </td>
+              <td>
+                <a href="" class="text-danger"><i class="far fa-trash-alt fa-lg"></i></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="row">
+        <div class="col-2">
+          <section class="d-flex justify-content-start">
+            <button type="button" class="btn btn-info btn-sm mr-3">Lưu lịch sử</button>
+            <button type="button" class="btn btn-secondary btn-sm">
+              <i class="fas fa-print"></i>
+              In
+            </button>
+          </section>
+        </div>
+
+        <div class="col-10">
+          <ul class="pagination justify-content-end">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="mt-5 mb-4">
+        <form class="form-inline">
+          <div class="form-group">
+            <label>Từ ngày</label>
+            <input type="text" class="form-control mx-sm-3">
+
+            <label>Đến ngày</label>
+            <input type="text" class="form-control mx-sm-3">
+
+            <div class="mt-2">
+              <button type="submit" class="btn btn-primary btn-sm">
+                <i class="fas fa-filter"></i>
+                Lọc kết quả
+              </button>
+              <button type="submit" class="btn btn-success ml-3 btn-sm">
+                <i class="far fa-file-excel"></i>
+                Xuất Excel
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <div class="table-responsive-md mb-5">
         <table class="table table-bordered table-results">
           <thead>
             <tr>
@@ -281,27 +459,8 @@
           </tbody>
         </table>
       </div>
-
-      <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-end">
-          <li class="page-item disabled">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-              <span class="sr-only">Previous</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-              <span class="sr-only">Next</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
     </div>
+    <!-- / .container -->
   </main>
   <!-- / RESULTS FILTER -->
 
