@@ -60,6 +60,10 @@ body {
   text-align: center;
 }
 
+.search__cart a {
+  color: inherit;
+}
+
 .search__cart .fas {
   font-size: 25px
 }
