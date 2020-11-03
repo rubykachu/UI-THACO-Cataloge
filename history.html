@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/reset.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
@@ -272,24 +273,34 @@
       </nav>
 
       <section class="mt-5 mb-4">
-        <form class="form-inline">
-          <div class="form-group w-100p">
-            <label>Từ ngày</label>
-            <input type="text" class="form-control mx-sm-3" placeholder="dd/mm/yyyy">
+        <form class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="row">
+              <div class="col-6 form-inline">
+                <div class="form-group">
+                  <label>Từ ngày</label>
+                  <input type="text" class="form-control mx-sm-3" placeholder="dd/mm/yyyy">
+                </div>
+              </div>
 
-            <label>Đến ngày</label>
-            <input type="text" class="form-control mx-sm-3" placeholder="dd/mm/yyyy">
-
-            <div class="mt-2">
-              <button type="submit" class="btn btn-primary btn-sm">
-                <i class="fas fa-filter" aria-hidden="true"></i>
-                Lọc kết quả
-              </button>
-              <button type="submit" class="btn btn-success ml-3 btn-sm">
-                <i class="far fa-file-excel" aria-hidden="true"></i>
-                Xuất Excel
-              </button>
+              <div class="col-6 form-inline">
+                <div class="form-group">
+                  <label>Đến ngày</label>
+                  <input type="text" class="form-control mx-sm-3" placeholder="dd/mm/yyyy">
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-sm-12 col-md-6 mt-1">
+            <button type="submit" class="btn btn-primary btn-sm">
+              <i class="fas fa-filter" aria-hidden="true"></i>
+              Lọc kết quả
+            </button>
+            <button type="submit" class="btn btn-success ml-3 btn-sm">
+              <i class="far fa-file-excel" aria-hidden="true"></i>
+              Xuất Excel
+            </button>
           </div>
         </form>
       </section>
@@ -479,7 +490,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/dcd8ac9b46.js" crossorigin="anonymous"></script>
   <script src="assets/index.js"></script>
 </body>
 
