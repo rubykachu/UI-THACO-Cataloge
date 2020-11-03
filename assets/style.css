@@ -9,10 +9,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.w-100p {
-  width: 100%;
-}
-
 .divider {
   border-top: 1px solid #eee;
   margin-top: 2rem;
@@ -87,7 +83,7 @@ body {
   position: absolute;
   display: block;
   top: -15px;
-  left: 55px;
+  left: 48px;
   width: 23px;
   height: 23px;
   line-height: 23px;
